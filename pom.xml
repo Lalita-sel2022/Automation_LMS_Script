@@ -21,6 +21,12 @@
             <artifactId>selenium-java</artifactId>
             <version>4.8.3</version>
         </dependency>
+    <dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.7.1</version>
+    <scope>compile</scope>  <!-- Change from test to compile -->
+    </dependency>
 
         <!-- TestNG -->
         <dependency>
