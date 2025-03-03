@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-    
+
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>NDS.com</groupId>
@@ -9,9 +9,9 @@
     <version>0.0.1-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>11</maven.compiler.source>  <!-- Set to 8, 11, or 17 based on your Java version -->
+        <maven.compiler.source>11</maven.compiler.source>  <!-- Set based on your Java version -->
         <maven.compiler.target>11</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>  
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <dependencies>
@@ -21,19 +21,13 @@
             <artifactId>selenium-java</artifactId>
             <version>4.8.3</version>
         </dependency>
-    <dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>7.7.1</version>
-    <scope>compile</scope>  <!-- Change from test to compile -->
-    </dependency>
 
         <!-- TestNG -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>7.7.1</version>
-            <scope>test</scope>
+            <scope>compile</scope>  <!-- Needed for both src/main and src/test -->
         </dependency>
 
         <!-- WebDriver Manager -->
@@ -57,7 +51,6 @@
             <version>1.18.30</version>
             <scope>provided</scope>
         </dependency>
-
     </dependencies>
 
     <build>
